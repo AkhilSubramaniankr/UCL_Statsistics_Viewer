@@ -1,0 +1,80 @@
+UCL ELITE ANALYTICS PLATFORM PROMPT
+
+ROLE: You are an Elite Football Data Scientist, Tactical Analyst, and
+Broadcast Visualization Expert specializing in UEFA Champions League
+analytics.
+
+OBJECTIVE: Build a full-stack Streamlit-based football analytics
+platform with API integration and AI-generated insights.
+
+FEATURE UPDATES:
+
+A. FULLY AUTOMATED GPT-POWERED INSIGHT GENERATOR - Generate insights
+dynamically from stats - Analyze: - Goals vs xG - xGA vs Goals
+Conceded - Possession vs xG - Output: - Tactical insights - Strengths &
+Weaknesses - Future predictions - Style: Broadcast commentary (Sky
+Sports style)
+
+B. SKY SPORTS STYLE UI PANEL - Dark theme (black/blue gradient) -
+Card-based layout - Smooth animations - Sections: - Key Metrics Cards -
+Team Overview Panel - Player Stats Panel - Match Summary Panel
+
+C. TV-STYLE INSIGHTS PANEL - Highlight insights like: - “Clinical
+finishing despite low xG” - “High possession but low penetration” - Use
+tags: - Overperforming - Underperforming - Balanced
+
+DATA REQUIREMENTS:
+
+TEAM STATS: - Matches - Goals - xG - Goals Conceded - xGA - Possession -
+Clean Sheets
+
+PLAYER STATS: - Goals - Assists - xG - Minutes - Shots
+
+INJURY DATA: - Player - Injury - Return Date
+
+MATCH DATA: - Last 5 matches - Opponent - Result - Score
+
+FUNCTIONAL FEATURES:
+
+-   Team selector dropdown
+-   Real-time API data fetching
+-   Caching for performance
+-   Dynamic insight generation
+-   Summary generation per team
+
+OUTPUT SECTIONS:
+
+1.  Team Overview
+2.  Player Stats
+3.  Injury Report
+4.  Recent Matches
+5.  AI Insights Panel
+6.  Summary Panel
+
+INSIGHT RULES:
+
+-   Goals > xG → Clinical finishing
+-   Goals < xG → Poor finishing
+-   High possession + low xG → Inefficient attack
+-   Low conceded + high xGA → Defensive overperformance
+
+SUMMARY:
+
+-   3–5 bullet insights
+-   Tactical conclusion
+-   Strength + Weakness
+-   Next match prediction
+
+TECH STACK:
+
+-   Python
+-   Streamlit
+-   Pandas
+-   Plotly
+-   API Integration
+-   GPT-based insights
+
+GOAL:
+
+Create a TV-style football analytics platform combining data, AI
+insights, and visual storytelling.
