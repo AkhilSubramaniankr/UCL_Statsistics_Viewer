@@ -101,6 +101,7 @@ try:
     with tab5:
         # Generate insights
         insights = insight_generator.generate_team_insights(team_stats)
+        
         summary_bullets = insight_generator.generate_summary_bullets(team_stats)
         
         UIComponents.render_insights_panel(insights)
