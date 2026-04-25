@@ -234,3 +234,29 @@ MIT License - Feel free to use and modify for your needs
 **Created**: 2024
 **Version**: 1.0.0
 **Status**: Active Development
+
+## Deployment
+
+You can deploy this project several ways. Two recommended options:
+
+- Container (Docker): build the included `Dockerfile` and run locally or push to your container registry.
+
+   ```bash
+   docker build -t ucl-analytics:latest .
+   docker run -p 8501:8501 ucl-analytics:latest
+   ```
+
+- Streamlit Community Cloud / Render: connect this GitHub repository to the platform and set the following environment variables in the service settings: `OPENAI_API_KEY`, `FOOTBALL_API_KEY` (optional).
+
+For Heroku-compatible platforms using `Procfile`:
+
+   ```bash
+   heroku create my-ucl-analytics
+   git push heroku main
+   heroku config:set OPENAI_API_KEY=your_key_here
+   heroku open
+   ```
+
+Notes:
+- Make sure to copy `.env.example` to `.env` and add real API keys locally. Never commit `.env`.
+- The included GitHub Actions workflow will build the Docker image on pushes to `main`. It currently does not push the image; modify `push: true` and configure secrets to enable pushing.
